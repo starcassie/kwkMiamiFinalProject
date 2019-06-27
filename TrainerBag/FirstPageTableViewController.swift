@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 class FirstPageTableViewController: UITableViewController {
     var pokemons: [Pokemon] = []
     
@@ -28,6 +29,7 @@ class FirstPageTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
     }
 
     // MARK: - Table view data source
@@ -40,13 +42,18 @@ class FirstPageTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TableViewCell()
+        let cell = UITableViewCell()
         let cellPokemon = pokemons[indexPath.row]
-//        if let cellPokemonImageData = cellPokemon.image {
-//            if let cellPokemonImage = UIImage(data: cellPokemonImageData) {
-//                cell.picture?.image = cellPokemonImage
-//            }
-//        }
+        cell.textLabel?.text = cellPokemon.name
+        cell.textLabel?.textAlignment = .left
+        if let cellPokemonImageData = cellPokemon.image {
+            if let cellPokemonImage = UIImage(data: cellPokemonImageData) {
+                cell.imageView?.image = cellPokemonImage
+                let screenSize = UIScreen.main.bounds
+                cell.imageView?.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height)
+                cell.imageView?.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            }
+        }
         return cell
     }
     
@@ -114,5 +121,9 @@ class FirstPageTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    }
 
-}
+
+
