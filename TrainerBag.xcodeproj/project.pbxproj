@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188E86B222C507E10045FD37 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E86B122C507E10045FD37 /* PokemonViewController.swift */; };
+		1899975E22C50CB300AD1DE1 /* FirstPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */; };
+		1899976022C51CA200AD1DE1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899975F22C51CA200AD1DE1 /* TableViewCell.swift */; };
 		18BDBE7B22C3F3DB005C663C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBE7A22C3F3DB005C663C /* AppDelegate.swift */; };
 		18BDBE8022C3F3DB005C663C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BDBE7E22C3F3DB005C663C /* Main.storyboard */; };
 		18BDBE8322C3F3DB005C663C /* TrainerBag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBE8122C3F3DB005C663C /* TrainerBag.xcdatamodeld */; };
@@ -14,7 +17,6 @@
 		18BDBE8822C3F3DD005C663C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BDBE8622C3F3DD005C663C /* LaunchScreen.storyboard */; };
 		18BDBE9322C3F3DD005C663C /* TrainerBagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBE9222C3F3DD005C663C /* TrainerBagTests.swift */; };
 		18BDBE9E22C3F3DD005C663C /* TrainerBagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBE9D22C3F3DD005C663C /* TrainerBagUITests.swift */; };
-		18BDBEAC22C3F537005C663C /* FirstPageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBEAB22C3F537005C663C /* FirstPageCollectionViewController.swift */; };
 		18BDBEAE22C3F721005C663C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBEAD22C3F721005C663C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188E86B122C507E10045FD37 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewController.swift; sourceTree = "<group>"; };
+		1899975F22C51CA200AD1DE1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		18BDBE7722C3F3DB005C663C /* TrainerBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainerBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BDBE7A22C3F3DB005C663C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BDBE7F22C3F3DB005C663C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +54,6 @@
 		18BDBE9922C3F3DD005C663C /* TrainerBagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainerBagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BDBE9D22C3F3DD005C663C /* TrainerBagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerBagUITests.swift; sourceTree = "<group>"; };
 		18BDBE9F22C3F3DD005C663C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18BDBEAB22C3F537005C663C /* FirstPageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageCollectionViewController.swift; sourceTree = "<group>"; };
 		18BDBEAD22C3F721005C663C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,9 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				18BDBE7A22C3F3DB005C663C /* AppDelegate.swift */,
+				188E86B122C507E10045FD37 /* PokemonViewController.swift */,
 				18BDBE7E22C3F3DB005C663C /* Main.storyboard */,
+				1899975F22C51CA200AD1DE1 /* TableViewCell.swift */,
+				1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */,
 				18BDBEAD22C3F721005C663C /* DetailViewController.swift */,
-				18BDBEAB22C3F537005C663C /* FirstPageCollectionViewController.swift */,
 				18BDBE8422C3F3DD005C663C /* Assets.xcassets */,
 				18BDBE8622C3F3DD005C663C /* LaunchScreen.storyboard */,
 				18BDBE8922C3F3DD005C663C /* Info.plist */,
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BDBE7B22C3F3DB005C663C /* AppDelegate.swift in Sources */,
-				18BDBEAC22C3F537005C663C /* FirstPageCollectionViewController.swift in Sources */,
+				1899975E22C50CB300AD1DE1 /* FirstPageTableViewController.swift in Sources */,
+				188E86B222C507E10045FD37 /* PokemonViewController.swift in Sources */,
+				1899976022C51CA200AD1DE1 /* TableViewCell.swift in Sources */,
 				18BDBE8322C3F3DB005C663C /* TrainerBag.xcdatamodeld in Sources */,
 				18BDBEAE22C3F721005C663C /* DetailViewController.swift in Sources */,
 			);

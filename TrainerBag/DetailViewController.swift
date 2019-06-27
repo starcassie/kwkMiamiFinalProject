@@ -14,6 +14,18 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         newScreen.delegate = self
         // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBOutlet weak var newImage: UIImageView!
@@ -52,6 +64,8 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
         navigationController?.popViewController(animated: true)
     }
+    
+
     /*
     // MARK: - Navigation
 
