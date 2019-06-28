@@ -14,7 +14,7 @@ class PokemonViewController: UIViewController {
         super.viewDidLoad()
         if let realpokemon = pokemon {
             title = realpokemon.name
-            info.text = "name: \(realpokemon.name!) \npersonality:  \( realpokemon.number!) \ntraits: \(realpokemon.gender!)"
+            info.text = "name: \(realpokemon.name!) \npersonality:  \( realpokemon.number!) \nnotes: \(realpokemon.gender!)"
             if let cellPokemonImageData = realpokemon.image {
                 if let cellPokemonImageData = UIImage(data: cellPokemonImageData) {
                     pic.image = cellPokemonImageData

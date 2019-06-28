@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1876F02D22C64D8F00EF88DB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876F02C22C64D8F00EF88DB /* ProfileViewController.swift */; };
+		1876F02F22C64DB700EF88DB /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876F02E22C64DB700EF88DB /* ProfileEditViewController.swift */; };
 		188E86B222C507E10045FD37 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E86B122C507E10045FD37 /* PokemonViewController.swift */; };
 		1899975E22C50CB300AD1DE1 /* FirstPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */; };
 		18BDBE7B22C3F3DB005C663C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDBE7A22C3F3DB005C663C /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1876F02C22C64D8F00EF88DB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1876F02E22C64DB700EF88DB /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		188E86B122C507E10045FD37 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewController.swift; sourceTree = "<group>"; };
 		18BDBE7722C3F3DB005C663C /* TrainerBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainerBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 				18BDBE7A22C3F3DB005C663C /* AppDelegate.swift */,
 				188E86B122C507E10045FD37 /* PokemonViewController.swift */,
 				18BDBE7E22C3F3DB005C663C /* Main.storyboard */,
+				1876F02E22C64DB700EF88DB /* ProfileEditViewController.swift */,
+				1876F02C22C64D8F00EF88DB /* ProfileViewController.swift */,
 				1899975D22C50CB300AD1DE1 /* FirstPageTableViewController.swift */,
 				18BDBEAD22C3F721005C663C /* DetailViewController.swift */,
 				18BDBE8422C3F3DD005C663C /* Assets.xcassets */,
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1876F02D22C64D8F00EF88DB /* ProfileViewController.swift in Sources */,
+				1876F02F22C64DB700EF88DB /* ProfileEditViewController.swift in Sources */,
 				18BDBE7B22C3F3DB005C663C /* AppDelegate.swift in Sources */,
 				1899975E22C50CB300AD1DE1 /* FirstPageTableViewController.swift in Sources */,
 				188E86B222C507E10045FD37 /* PokemonViewController.swift in Sources */,
