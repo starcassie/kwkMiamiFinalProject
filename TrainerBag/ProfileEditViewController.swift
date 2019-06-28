@@ -33,7 +33,9 @@ class ProfileEditViewController: UIViewController, UIImagePickerControllerDelega
         view.addGestureRecognizer(tap)
         getPhotos()
         if (!photos.isEmpty) {
-            pfp.image = UIImage(data: photos[photos.count - 1].photo!)
+            if let data = photos[photos.count - 1].photo {
+                pfp.image = UIImage(data: data)
+            }
             pfp.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
             name.text = photos[photos.count - 1].name!
             bio.text = photos[photos.count - 1].bio!
